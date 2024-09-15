@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/Maite.1\ .jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    color: #ec7693; 
+    
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.534); /* Capa semitransparente negra (oscurece el fondo) */
+    z-index: 1;
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Filtro de desenfoque (ajustable) */
+    z-index: 2;
+}
+
+.greetings {
+    display: flex;
+    text-decoration: none; /* Sin subrayado */
+    justify-content: center; 
+    align-items: center; 
+    height: 60vh; /* Altura del contenedor */
+    text-align: center;
+    font-size: 3em; /* Tamaño de letra grande */
+    font-weight: bold; 
+    letter-spacing: 0.4em; /* Espaciado entre letras */
+    text-shadow: 2px 2px 5px #fffefe; 
+}
+.greetings, .button {
+    text-decoration: none; /* Sin subrayado */
+    position: relative; /* Para asegurarse de que el contenido esté por encima del fondo */
+    z-index: 3; /* Asegura que esté por encima de las capas de fondo */
+}
+/* Estilo para cada letra del mensaje */
+.greetings span {
+    animation: fadeIn 2s ease-in-out infinite; /* Animación simple para cada letra */
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.button {
+    text-align: center; /* Centra el botón */
+    margin-top: 20px;
+
+}
+
+.botones {
+    background-color: #ec7693; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 1.5em; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease; 
+}
+
+/* Estilo de hover para el botón */
+.botones:hover {
+    text-decoration: none; /* Sin subrayado */
+    background-color: #e91e63; 
+
+}
