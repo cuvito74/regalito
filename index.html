@@ -30,7 +30,16 @@
             <a href="flower.html" style="color: #fff;">Do you want to be my girlfriend??</a>
         </button>
     </div>
+      <button onclick="playMusic()">Reproducir Música</button>
 
+<audio id="myMusic" src="ruta-a-tu-musica.mp3"></audio>
+
+<script>
+    function playMusic() {
+        var music = document.getElementById("myMusic");
+        music.play();
+    }
+</script>
 
 </body>
 
